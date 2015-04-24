@@ -496,8 +496,7 @@
                             if (this.options.vertical)
                                 this.$el.addClass('elessar-vertical');
                             this.ranges = [];
-                            this.on('mousemove.elessar touchmove.elessar', $.proxy(this.mousemove, this));
-                            this.on('mouseleave.elessar touchleave.elessar', $.proxy(this.removePhantom, this));
+                            
                             if (options.values)
                                 this.setVal(options.values);
                             if (options.bgLabels) {
